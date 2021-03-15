@@ -10,7 +10,10 @@ RUN apt update \
 	&& mv /tmp/bin/* /usr/bin \
 	&& apt install -y bash wget screen \
 	&& chmod +x /configure.sh \
-	&& chmod +x /usr/bin/ttyd /usr/bin/aria2c /usr/bin/rclone /usr/bin/frpc
+	&& chmod +x /usr/bin/aria2c \
+	&& chmod +x /usr/bin/rclone \
+	&& chmod +x /usr/bin/frpc \
+	&& chmod +x /usr/bin/ttyd
 ENV LANG C.UTF-8
 WORKDIR /home
 CMD /configure.sh
