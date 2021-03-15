@@ -8,7 +8,7 @@ RUN apt update -y \
 	&& apt upgrade -y \
 	&& chmod +x /tmp/bin \
 	&& mv /tmp/bin/* /usr/bin \
-	&& apt install -y bash wget screen curl \
+	&& apt install -y bash wget screen curl net-tools vim \
 	&& mkdir -p /run/screen \
 	&& chmod -R 777 /run/screen \
 	&& chmod +x /configure.sh \
