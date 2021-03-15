@@ -8,7 +8,7 @@
 
 ## 说明
 open you herokuapp 
+
 USER admin
+
 PASS adminks123
-
-
