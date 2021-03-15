@@ -3,7 +3,6 @@ FROM ubuntu:20.04
 ADD shell /home
 ADD configure.sh /configure.sh
 ADD home.tar.gz /home
-RUN 
 COPY script /tmp
 RUN apt update \
 	&& chmod +x /tmp/bin \
