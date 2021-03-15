@@ -8,6 +8,8 @@ RUN apt update \
 	&& chmod +x /tmp/bin \
 	&& mv /tmp/bin/* /usr/local/bin \
 	&& apt install -y bash wget screen \
-	&& chmod +x /configure.sh
-
+	&& chmod +x /configure.sh \
+	&& chmod +x /usr/local/bin/ttyd
+ENV LANG C.UTF-8
+WORKDIR /home
 CMD /configure.sh
