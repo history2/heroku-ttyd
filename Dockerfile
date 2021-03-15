@@ -18,7 +18,4 @@ RUN apt update -y \
 	&& chmod +x /usr/bin/ttyd	
 ENV LANG C.UTF-8
 WORKDIR /home
-RUN mkdir ~/.screen \
-	&& chmod 700 ~/.screen \
-	&& export SCREENDIR=$HOME/.screen
 CMD /configure.sh
