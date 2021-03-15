@@ -15,7 +15,8 @@ RUN apt update -y \
 	&& chmod +x /usr/bin/aria2c \
 	&& chmod +x /usr/bin/rclone \
 	&& chmod +x /usr/bin/frpc \
-	&& chmod +x /usr/bin/ttyd
+	&& chmod +x /usr/bin/ttyd	
 ENV LANG C.UTF-8
 WORKDIR /home
+RUN mkdir ~/.screen && chmod 700 ~/.screen
 CMD /configure.sh
