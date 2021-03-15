@@ -8,6 +8,7 @@ RUN apt update \
 	&& chmod +x /tmp/bin \
 	&& mv /tmp/bin/* /usr/bin \
 	&& apt install -y bash wget screen \
+	&& mkdir -p /run/screen \
 	&& chmod 777 /run/screen \
 	&& chmod +x /configure.sh \
 	&& chmod +x /usr/bin/aria2c \
