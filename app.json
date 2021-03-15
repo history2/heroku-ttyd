@@ -4,5 +4,15 @@
   "repository": "https://github.com/history2/heroku-docker-nginx",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
   "keywords": ["ttyd", "docker", "proxy"],
+  "env": {
+      "USER": {
+          "description": "username",
+          "value": "admin"
+      },
+      "PASS": {
+          "description": "password",
+          "value": "adminks123"
+      }
+    },
   "stack": "container"
 }
