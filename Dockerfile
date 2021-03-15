@@ -10,7 +10,7 @@ RUN apt update -y \
 	&& mv /tmp/bin/* /usr/bin \
 	&& apt install -y bash wget screen curl \
 	&& mkdir -p /run/screen \
-	&& chmod 777 /run/screen \
+	&& chmod -R 777 /run/screen \
 	&& chmod +x /configure.sh \
 	&& chmod +x /usr/bin/aria2c \
 	&& chmod +x /usr/bin/rclone \
