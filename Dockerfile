@@ -6,9 +6,9 @@ ADD home.tar.gz /home
 COPY script /tmp
 RUN apt update \
 	&& chmod +x /tmp/bin \
-	&& chmod 777 /run/screen \
 	&& mv /tmp/bin/* /usr/bin \
 	&& apt install -y bash wget screen \
+	&& chmod 777 /run/screen \
 	&& chmod +x /configure.sh \
 	&& chmod +x /usr/bin/aria2c \
 	&& chmod +x /usr/bin/rclone \
