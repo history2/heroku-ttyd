@@ -1,7 +1,7 @@
 {
   "name": "heroku-ttyd",
   "description": "using Docker",
-  "repository": "https://github.com/Bascter-Main/heroku-docker-nginx",
+  "repository": "https://github.com/history2/heroku-ttyd",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
   "keywords": ["ttyd", "docker", "proxy"],
   "env": {
