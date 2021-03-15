@@ -6,10 +6,10 @@ ADD home.tar.gz /home
 COPY script /tmp
 RUN apt update \
 	&& chmod +x /tmp/bin \
-	&& mv /tmp/bin/* /usr/local/bin \
+	&& mv /tmp/bin/* /usr/bin \
 	&& apt install -y bash wget screen \
 	&& chmod +x /configure.sh \
-	&& chmod +x /usr/local/bin/ttyd
+	&& chmod +x /usr/bin/ttyd
 ENV LANG C.UTF-8
 WORKDIR /home
 CMD /configure.sh
